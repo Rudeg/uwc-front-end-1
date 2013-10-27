@@ -1,0 +1,113 @@
+.header > a {
+    float: left;
+}
+.nav:after {
+    float: left;
+}
+.nav li { 
+    float: left;
+    padding-left: 36px;
+}
+.nav li.active {
+    margin-left: 36px;
+}
+.nav,
+.banner h1, 
+.banner h3,
+.section-list li {
+    position: relative;
+}
+.banner h1 {
+    top: 58%;
+}
+.banner h3 {
+    top: 34%;
+}
+.section-list li {
+    margin-right: expression(this.nextSibling == null ? '0' : '45px');
+    zoom: 1;
+    *display: inline;
+}
+.submenu {
+    display: inline;
+    float: left;
+    margin-right: expression(this.nextSibling == null ? '0' : '65px');
+}
+.socials a {
+    margin-right: expression(this.nextSibling == null ? '0' : '24px');
+}
+/*Section2 fixes*/
+.li-wrapper,  
+.category-text { 
+    position: absolute;
+}
+.li-wrapper { 
+    height: 180px;
+    width: 180px;
+    left: 30px; 
+    top: 41px; 
+    text-align: center;
+    zoom: 1;
+    *display: inline;
+}
+.li-title {
+    position: relative;
+    margin:90px 55px 0 0;
+}
+.li-title, 
+.ticket-title,
+.camera-title, 
+.beer-title, 
+.devices-title {
+  *zoom: expression( 
+    this.runtimeStyle.zoom="1",
+    this.insertBefore( document.createElement("small"), this.firstChild ).className="before"
+   );
+}
+.li-title .before,
+.li-title:before {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    display: block;
+    content: "";
+}
+.ticket-title .before,
+.ticket-title:before {
+    height: 82px;
+    width: 82px;
+    position: absolute;
+    background: url(../images/sprite.png) no-repeat center top;
+    background-position: -680px 0;
+}
+.camera-title .before,
+.camera-title:before {
+    height: 70px;
+    width: 80px;
+    margin-top: 22px;
+    background: url(../images/sprite.png) no-repeat center top;
+    background-position: -118px 0;
+}
+.beer-title .before,
+.beer-title:before {
+    width: 68px;
+    height: 85px;
+    left: 34px;
+    margin-top: 7px;
+    background: url(../images/sprite.png) no-repeat center top;
+    background-position: 0 0;
+}
+.devices-title .before,
+.devices-title:before {
+    width: 76px;
+    height: 76px;
+    margin-top: 16px;
+    background: url(../images/sprite.png) no-repeat center top;
+    background-position: -248px 0;
+}
+/*Footer fix*/
+.footer {
+    padding-bottom: 10px;  
+    zoom: 1;
+    *display: inline;
+}
