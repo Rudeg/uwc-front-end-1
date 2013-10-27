@@ -52,7 +52,7 @@
 }
 .li-title {
     position: relative;
-    margin:90px 55px 0 0;
+    margin: 90px 55px 0 0;
 }
 .li-title, 
 .ticket-title,
@@ -90,8 +90,8 @@
 }
 .beer-title .before,
 .beer-title:before {
-    width: 68px;
     height: 85px;
+    width: 68px;
     left: 34px;
     margin-top: 7px;
     background: url(../images/sprite.png) no-repeat center top;
@@ -99,8 +99,8 @@
 }
 .devices-title .before,
 .devices-title:before {
-    width: 76px;
     height: 76px;
+    width: 76px;
     margin-top: 16px;
     background: url(../images/sprite.png) no-repeat center top;
     background-position: -248px 0;

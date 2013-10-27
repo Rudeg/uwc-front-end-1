@@ -77,31 +77,29 @@ body {
 /*Header area*/
 .header {
     height: 89px;
-    background: white;
     z-index: 1;
+    background: white;
     opacity: 0.9;    
     filter: alpha(opacity=90);
     -moz-opacity:0.9;
     -khtml-opacity: 0.9;
-
 }
 .header > a {
-    display: inline-block;
     width: 23%;
+    float: left;
     padding-top: 20px;
     text-align: right;
 }
 .header > a > img {
-    width:130px; 
-    height:52px;
+    width: 130px; 
+    height: 52px;
 }
 /*Navigation area*/
 .nav {
+    width: 34%;
     float: right;
-    width: 36%;
-    padding-top: 37px;
     text-align: justify;
-    padding-right: 175px;
+    padding: 37px 200px 0 0;
 }
 .nav:after {
     width: 100%;
@@ -110,8 +108,6 @@ body {
 }
 .nav li {
     display: inline-block;
-    zoom: 1;
-    *display: inline;
 }
 .nav a {
     text-decoration: none;
@@ -122,7 +118,7 @@ body {
     border-radius: 3px;
     padding: 0px;
 }
-.nav li.active > a {
+.nav li.active a {
     background: url(../images/icon.png) no-repeat left center;
     display: block;
     padding: 6px 14px 6px 22px;
@@ -145,17 +141,18 @@ body {
     color: #fff;
 }
 .banner h1 {
-    height: 76px;
+    height: 78px;
     width: 54%;
+    padding-left: 25px;
     font-size: 69px;
     font-family: 'alte_haas_groteskbold';
 }
 .banner h3 {
-    height: 0px;
+    height: 3px;
     width: 40%;
     font-size: 25px;
-    padding-left: 45px;
-    letter-spacing: 0.020em;
+    padding-left: 60px;
+    letter-spacing: 0.03em;
     font-family: 'universal_lightregular';
 }
 /*Section2 area*/
@@ -167,8 +164,7 @@ body {
     font-family: 'universal_lightregular';
 }
 .section2 h2 {
-    margin-top: 65px;
-    margin-bottom: 20px;
+    margin: 65px 0 20px 0;
     text-align: center;
     font-size: 37px;
     letter-spacing: 0.005em;
@@ -191,10 +187,10 @@ body {
 }
 .section-list:after {
     width: 100%;
-    content: '';
     display: inline-block;
     zoom: 1;
     *display: inline;
+    content: '';
 }
 .section-list li {
     height: 180px;
@@ -311,28 +307,29 @@ body {
     float: right;
 }
 .news-content h2 {
-    padding-top: 8px;
-    padding-bottom: 15px;
+    padding: 8px 0 15px 0;
     font-size: 27px;
+    color: #545454;
 }
 .news-content p {
     font-size: 16px;
     line-height: 20px;
+    color: #8b8b8b;
 }
 /*Footer area*/
 .footer {
     width: 100%;
-    padding-top: 30px;
     display: inline-block;
     text-align: center;
+    padding-top: 30px;
     background: url(../images/footer-bg.jpg);
     font-family: 'universal_lightregular';
     color: #5f5f5f;
 }
 .footer a {
+    font-size: 15px;
     text-decoration: none;
     color: #8b8b8b;
-    font-size: 15px;
 }
 .footer-wrapper {
     width: 74%;
@@ -341,12 +338,14 @@ body {
 .footer-wrapper p {
     float: right;
     font-weight: 600;
+    color: #8b8b8b;
 }
 /*Footer menus area*/
 .submenu-wrapper {
     width: 64%;
     float: left;
     text-align: justify;
+    margin-bottom: 10px;
 }
 .submenu-wrapper:after {
     width: 100%;
@@ -362,8 +361,7 @@ body {
     padding-bottom: 20px;
 }
 .submenu li {
-    padding-bottom: 5px;
-    padding-left: 4px;
+    padding: 0 0 5px 4px;
 }
 /*Social icons*/
 .socials {
@@ -381,7 +379,7 @@ body {
     margin-bottom: 28px;
 }
 .social-drible { 
-    background: url(../images/sprite.png) no-repeat -374px 0;; 
+    background: url(../images/sprite.png) no-repeat -374px 0;
 } 
 .social-fb { 
     background:url(../images/sprite.png) no-repeat  -476px 0;
@@ -425,6 +423,9 @@ body {
         float: right;
         padding-bottom: 5px;
     }
+    .section-list li {
+        margin: 0 0 10px 0px;
+    }
 } 
 @media only screen and (max-width: 800px) {
     .nav {
@@ -443,9 +444,10 @@ body {
     .banner h1 {
         width: 100%;
         margin-bottom: 200px;
+        padding-left: 0px;
     }
     .banner h3 {
-        width: 950%;
+        width: 95%;
         padding-left: 0px;
     }
 }
@@ -468,7 +470,7 @@ body {
         display: none; 
         margin: 0;
     }
-    ul.nav li.active {
+    .nav li.active {
         display: block; 
     }
     .nav a {
@@ -489,8 +491,11 @@ body {
         display: block;
         margin: 0 0 2px;
     }
-    .nav:hover > li.active {
+    .nav:hover li.active {
         background: #de6d6e;
+    }
+    .section2 p {
+        margin: 0 auto 55px;
     }
 }
 /* Min width */
@@ -503,8 +508,15 @@ body {
         float: right;
     }
     .nav {
-        width: 36%;
-        padding-right: 175px;
+        width: 34%;
+        float: right;
+        text-align: justify;
+        padding: 37px 200px 0 0;
+    }
+    .nav:after {
+        width: 100%;
+        display: inline-block;
+        content: '';
     }
 } 
 @media only screen and (min-width: 320px) {    
