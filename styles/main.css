@@ -97,10 +97,10 @@ body {
 /*Navigation area*/
 .nav {
     width: 34%;
-    float: right;
+    display: inline-block;
     text-align: justify;
-    padding: 37px 200px 0 0;
-    }
+    padding: 37px 0 0 345px;
+}
 .nav:after {
     width: 100%;
     display: inline-block;
@@ -407,11 +407,18 @@ body {
     .footer-wrapper p {
         float: none;
     }
+    .news img {
+        padding-right: 10px;
+    }
+    .news-content {
+        width: 100%;
+        float: none;
+   }
 }
 @media only screen and (max-width: 1000px) {
     .nav {
         width: 46%;
-        padding-right: 80px; 
+        padding-left: 180px; 
     }
     .banner h1 {
         width: 90%;
@@ -430,7 +437,7 @@ body {
 @media only screen and (max-width: 800px) {
     .nav {
         width: 63%;
-        padding-right: 20px;
+        padding-left: 0px;
     }
     .banner h1 {
         width: 95%;
