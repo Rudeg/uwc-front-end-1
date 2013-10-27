@@ -1,6 +1,9 @@
 .header > a {
     float: left;
 }
+.nav {
+  width: 44%;
+}
 .nav:after {
     float: left;
 }
