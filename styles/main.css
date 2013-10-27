@@ -87,7 +87,7 @@ body {
 .header > a {
     width: 23%;
     float: left;
-    padding-top: 20px;
+    padding: 20px 0 0 0;
     text-align: right;
 }
 .header > a > img {
@@ -100,7 +100,7 @@ body {
     float: right;
     text-align: justify;
     padding: 37px 200px 0 0;
-}
+    }
 .nav:after {
     width: 100%;
     display: inline-block;
@@ -118,7 +118,7 @@ body {
     border-radius: 3px;
     padding: 0px;
 }
-.nav li.active a {
+.nav li.active > a {
     background: url(../images/icon.png) no-repeat left center;
     display: block;
     padding: 6px 14px 6px 22px;
@@ -470,7 +470,7 @@ body {
         display: none; 
         margin: 0;
     }
-    .nav li.active {
+    ul.nav li.active {
         display: block; 
     }
     .nav a {
@@ -491,40 +491,10 @@ body {
         display: block;
         margin: 0 0 2px;
     }
-    .nav:hover li.active {
+    .nav:hover > li.active {
         background: #de6d6e;
     }
     .section2 p {
         margin: 0 auto 55px;
-    }
-}
-/* Min width */
-@media only screen and (min-width: 1270px) {
-    .news img {
-        padding-right: 0px;
-    }
-    .news-content {
-        width: 77%;
-        float: right;
-    }
-    .nav {
-        width: 34%;
-        float: right;
-        text-align: justify;
-        padding: 37px 200px 0 0;
-    }
-    .nav:after {
-        width: 100%;
-        display: inline-block;
-        content: '';
-    }
-} 
-@media only screen and (min-width: 320px) {    
-    .news img {
-        padding-right: 10px;
-    }
-    .news-content {
-        width: 100%;
-        float: none;
     }
 }
